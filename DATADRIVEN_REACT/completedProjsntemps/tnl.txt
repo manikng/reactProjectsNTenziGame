@@ -1,0 +1,117 @@
+-------😎😎🐱‍💻🐱‍💻🐱‍🐉🐱‍🐉🐱‍🚀🐱‍🚀 H---A----C----K-----------
+SO IF you want to use tailwindcss cdn and IntelliSense then
+if u using cdn u cann't use tcss IntelliSense but i say u can use its
+just make a tailwind.config.js file in ur project and make configurations add ur js,jsx  file etc
+and boom blasta i am fantasta u no ugo casta install tcss IntelliSense and use it 
+
+//jsx mai fxn ka phla letter must be capitalised 
+
+To create a project using Tailwind CSS, React, and Vite, follow these steps:
+
+1. **Create a new Vite project:**
+    Open your terminal and run the following command:
+    ```sh
+    npm create vite@latest my-project --template react
+    cd my-project
+    ```
+
+2. **Add Tailwind CSS via CDN:**
+    Open the `index.html` file in your project directory and add the following line inside the `<head>` tag:
+    ```html
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    ```
+
+3. **Start your development server:**
+    Run the following command to start the development server:
+    ```sh
+    npm run dev
+    ```
+
+You should now have a React project set up with Tailwind CSS via CDN and Vite.
+------------------------------------------------------------------------------------------------------
+                  --------  here full installation on local machine    ---------- 
+
+To create a project using Tailwind CSS, React, and Vite, follow these steps:
+
+1. **Create a new Vite project:**
+    Open your terminal and run the following command:
+    ```sh
+    npm create vite@latest my-project --template react
+    cd my-project
+    ```
+
+2. **Install Tailwind CSS:**
+    To create a project using Tailwind CSS, React, and Vite, follow these steps:
+
+1. **Create a new Vite project:**
+    Open your terminal and run the following command:
+    ```sh
+    npm create vite@latest my-project --template react
+    cd my-project
+    ```
+
+2. **Add Tailwind CSS via CDN:**
+    Open the `index.html` file in your project directory and add the following line inside the `<head>` tag:
+    ```html
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    ```
+
+3. **Start your development server:**
+    Run the following command to start the development server:
+    ```sh
+    npm run dev
+    ```
+
+You should now have a React project set up with Tailwind CSS via CDN and Vite.
+    Inside your project directory, install Tailwind CSS and its dependencies:
+    ```sh
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+    ```
+
+3. **Configure Tailwind CSS:**
+    Update the `tailwind.config.js` file with the paths to your template files:
+    ```js
+    /** @type {import('tailwindcss').Config} */
+    module.exports = {
+      content: [
+         "./index.html",
+         "./src/**/*.{js,ts,jsx,tsx}",
+      ],
+      theme: {
+         extend: {},
+      },
+      plugins: [],
+    }
+    ```
+
+4. **Add Tailwind directives to your CSS:**
+    Create a `src/index.css` file and add the following lines:
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    ```
+
+5. **Import the CSS file in your project:**
+    Open `src/main.jsx` and import the CSS file:
+    ```jsx
+    import React from 'react'
+    import ReactDOM from 'react-dom/client'
+    import App from './App'
+    import './index.css'
+
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      <React.StrictMode>
+         <App />
+      </React.StrictMode>
+    )
+    ```
+
+6. **Start your development server:**
+    Run the following command to start the development server:
+    ```sh
+    npm run dev
+    ```
+
+You should now have a React project set up with Tailwind CSS and Vite.
