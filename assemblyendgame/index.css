@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #262626;
+    color: #D9D9D9;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.letterBox{
+    background-color: #323232;
+    border-bottom: 1px solid #f9f4da;
+}
+.keyEle{
+    border: 1px solid #D7D7D7D7;
+    border-radius: 3px;
+}
+.keyContainer{
+    width: 46rem;
+}
+.correct{
+    background-color: #4CAF50;
+}
+.wrong{
+    background-color: #f44336;
+}
+span.langChip {
+    border-radius: 3px;
+    position: relative;
+}
+
+span.langChip.lost::before{
+        content: "💀";
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        font-size: 0.85rem;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }

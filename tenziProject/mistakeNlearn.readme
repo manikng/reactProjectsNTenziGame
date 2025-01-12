@@ -1,0 +1,14 @@
+i mistake : onClick = {handleDiceClick(index)} ❌  
+fix :onClick={() => handleDiceClick(index) } ✅
+exp:   {handleDiceClick(index)} bhi ke bhi exe hoga and sbke liye wheter clicked or not
+so esa krne ke liye appko ek callback ka use krna hoga then us callback ke jriye us fxn mai parameter passkr skte hoga
+
+Rem:so react mai ydi fxn ko params ke saath paas krna hai to callback ka use krna hoga
+
+Rem: When you pass a function with parentheses like 
+`handleDiceClick(index)`, it gets executed immediately during the 
+rendering phase, which is not what you want for an event handler. 
+Instead, you should pass a function reference or a callback 
+function like `() => handleDiceClick(index)` to ensure that the 
+function is called only when the event occurs.
+
